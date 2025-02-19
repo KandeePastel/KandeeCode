@@ -3,11 +3,12 @@
 	"displayName": "KandeeCode: VScode Syntax Highlighting",
 	"description": "Syntax highlighting for Xcode .pbxproj files",
 	"publisher": "KandeePastel",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/KandeePastel/KandeeCode.git"
 	},
+	"icon": "./media/icon.png",
 	"engines": {
 		"vscode": "^1.97.0"
 	},
