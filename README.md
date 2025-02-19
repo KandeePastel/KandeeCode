@@ -35,7 +35,7 @@ A **VS Code extension** that provides **syntax highlighting** for `.pbxproj` fil
 ### **Install from Source**
 1. Clone this repository:
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/pbxproj-syntax.git
+   git clone https://github.com/KandeePastel/KandeeCode.git
 2. Open the folder in VS Code:
    ```sh
    cd pbxproj-syntax
