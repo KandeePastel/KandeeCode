@@ -1,0 +1,30 @@
+{
+	"name": "kandee-code",
+	"displayName": "KandeeCode: VScode Syntax Highlighting",
+	"description": "Syntax highlighting for Xcode .pbxproj files",
+	"publisher": "KandeePastel",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KandeePastel/KandeeCode.git"
+	},
+	"engines": {
+		"vscode": "^1.97.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "pbxproj",
+			"aliases": ["Xcode Project", "pbxproj"],
+			"extensions": [".pbxproj"],
+			"configuration": "./language-configuration.json"
+		}],
+		"grammars": [{
+			"language": "pbxproj",
+			"scopeName": "source.pbxproj",
+			"path": "./syntaxes/pbxproj.tmLanguage.json"
+		}]
+	}
+}

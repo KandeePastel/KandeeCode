@@ -1,0 +1,70 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PBX Project File Syntax Highlighting",
+	"patterns": [
+		{
+			"name": "comment.line.pbxproj",
+			"match": "//.*"
+		},
+		{
+			"name": "keyword.control.pbxproj",
+			"match": "\\b(isa|objects|buildSettings|files|name|path|sourceTree|dependencies|targets|attributes|settings|isa)\\b"
+		},
+		{
+			"name": "constant.numeric.pbxproj",
+			"match": "\\b(\\d+|0x[0-9A-Fa-f]+)\\b"
+		},
+		{
+			"name": "string.quoted.pbxproj",
+			"match": "\"[^\"]*\""
+		},
+		{
+			"name": "constant.language.pbxproj",
+			"match": "\\b(Debug|Release)\\b"
+		},
+		{
+			"name": "support.type.pbxproj",
+			"match": "\\b(PBXBuildFile|PBXContainerItemProxy|PBXCopyFilesBuildPhase|PBXFileReference|PBXGroup|PBXNativeTarget|PBXProject|PBXSourcesBuildPhase|PBXFrameworksBuildPhase|PBXResourcesBuildPhase|XCBuildConfiguration|XCConfigurationList)\\b"
+		},
+		{
+			"name": "punctuation.section.brackets.pbxproj",
+			"match": "[{}();]"
+		},
+		{
+			"name": "comment.block.pbxproj",
+			"match": "\/\\*.*\\*\/"
+		},
+		{
+			"name": "variable.other.constant.pbxproj",
+			"match": "\\b[A-Z0-9_]+[a-zA-Z_]*?\\b(?=\\s*=)"
+		},
+		{
+			"name": "support.constant.boolean.pbxproj",
+			"match": "\\b(TRUE|FALSE|YES|YES_.*|NO|NO_.*)\\b"
+		},
+		{
+			"name": "support.constant.reverse.domain.pbxproj",
+			"match": "(?:[a-zA-Z]+\\.){2,}[a-zA-Z]+"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pbxproj",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.pbxproj",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pbxproj",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.pbxproj"
+}
